@@ -7,6 +7,8 @@ import EducationCard from './EducationCard';
 
 import { educationData } from '../../data/educationData'
 
+import ustensile from '../../assets/jpg/ustensile.jpg';
+
 function Education() {
 
     const { theme } = useContext(ThemeContext);
@@ -28,7 +30,7 @@ function Education() {
                     ))}
                 </div>
                 <div className="education-image">
-                    <img src={theme.eduimg} alt=""/>
+                    <img src={ustensile} alt=""/>
                 </div>
             </div>
         </div>

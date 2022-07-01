@@ -4,7 +4,8 @@ import './Achievement.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { achievementData } from '../../data/achievementData'
 import AchievementCard from './AchievementCard';
-
+import image from '../../assets/jpg/imagine.jpg';
+import '../Education/Education.css'
 function Achievement() {
 
     const { theme } = useContext(ThemeContext);
@@ -15,6 +16,9 @@ function Achievement() {
                 <div className="achievement-body">
                     <h1 style={{color: theme.primary}}>Filosofa noastra</h1>
                     <h4 style={{color:theme.tertiary}}>{achievementData.bio}</h4>
+                    <div className="education-image">
+                        <img src={image} alt="" />
+                    </div>
                 </div>
                 <div className="achievement-cards">
                     {achievementData.achievements.map(achieve => ( 

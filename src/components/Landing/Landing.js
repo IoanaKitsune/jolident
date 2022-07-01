@@ -8,6 +8,8 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
+import logo from '../../assets/jpg/logo.jpg';
+
 import {
     FaTwitter,
     FaLinkedin,
@@ -143,7 +145,8 @@ function Landing() {
                     </div>
                 </div>
                 <img
-                    src={headerData.image}
+                    //src={headerData.image}
+                    src={logo}
                     alt=''
                     className='landing--img'
                     style={{
